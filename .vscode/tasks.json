@@ -1,0 +1,48 @@
+﻿{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run Complete Project (Frontend + Backend)",
+      "type": "shell",
+      "command": "npm run dev",
+      "isBackground": true,
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "Start Backend Server Only",
+      "type": "shell",
+      "command": "npm start",
+      "options": {
+        "cwd": "/backend"
+      },
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "Start Frontend Client Only",
+      "type": "shell",
+      "command": "npm run dev",
+      "options": {
+        "cwd": "/frontend"
+      },
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    }
+  ]
+}
